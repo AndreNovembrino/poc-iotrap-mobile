@@ -1,0 +1,35 @@
+{
+  "name": "poc-iotrap-mobile",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "dependencies": {
+    "@tanstack/react-query": "^5.107.1",
+    "expo": "~58.0.23",
+    "expo-network": "~58.0.4",
+    "expo-status-bar": "~58.0.4",
+    "react": "19.3.0",
+    "react-native": "0.88.1",
+    "react-native-safe-area-context": "~5.11.1"
+  },
+  "devDependencies": {
+    "@testing-library/react-native": "^14.1.0",
+    "@types/jest": "^30.0.0",
+    "@types/react": "~19.3.0",
+    "jest": "^30.5.2",
+    "jest-expo": "~58.0.14",
+    "typescript": "~6.0.3"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "mock": "node mock-server/server.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "jest"
+  },
+  "private": true,
+  "jest": {
+    "preset": "jest-expo"
+  }
+}
